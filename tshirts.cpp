@@ -3,7 +3,6 @@
 #include <string>
 
 char size(int cms) {
-    std::string sizeName = "Invalid";
     if(cms >= 34 && cms < 38) {
         sizeName = "S";
     } else if(cms >= 38 && cms < 42) {
@@ -11,7 +10,7 @@ char size(int cms) {
     } else if(cms >= 42) {
         sizeName = "L";
     }
-    return "Invalid";
+    return "Invalid size";
 }
 
 void testTshirtSizes(){
@@ -21,7 +20,7 @@ void testTshirtSizes(){
     assert(size(40) == "M");
     assert(size(42) == "L");
     assert(size(43) == "L");
-    assert(size(5) == "Invalid");
+    assert(size(5) == "Invalid size");
 }
 
 int main() {
