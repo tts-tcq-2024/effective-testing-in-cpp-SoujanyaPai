@@ -3,7 +3,7 @@
 #include <string>
 
 std::string size(int cms) {
-    if(cms >= 34 && cms < 38) {
+    if(cms < 38) {
         return "S";
     } else if(cms >= 38 && cms < 42) {
          return "M";
