@@ -14,7 +14,7 @@ int getColorMap() {
 }
 
 void testColorMap() {
-    assert(0,getColorMap());
+    assert(getColorMap() == 0);
 }
 
 int main() {
