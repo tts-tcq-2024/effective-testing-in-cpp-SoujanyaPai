@@ -2,7 +2,7 @@
 #include <assert.h>
 #include <string>
 
-char size(int cms) {
+std:string size(int cms) {
     if(cms >= 34 && cms < 38) {
         sizeName = "S";
     } else if(cms >= 38 && cms < 42) {
