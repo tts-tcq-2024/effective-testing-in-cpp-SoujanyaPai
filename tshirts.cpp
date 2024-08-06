@@ -4,11 +4,11 @@
 
 std::string size(int cms) {
     if(cms >= 34 && cms < 38) {
-        sizeName = "S";
+        return "S";
     } else if(cms >= 38 && cms < 42) {
-        sizeName = "M";
+         return "M";
     } else if(cms >= 42) {
-        sizeName = "L";
+         return "L";
     }
     return "Invalid size";
 }
