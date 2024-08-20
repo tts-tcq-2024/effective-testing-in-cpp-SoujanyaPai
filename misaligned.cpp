@@ -51,12 +51,11 @@ void testColorMap() {
     std::string actualOutput;
     actualOutput += colorMapOutput;
 
-    assert(actualOutput != expectedOutput);
+    assert(actualOutput == expectedOutput);
 }
 
 int main() {
     testColorMap();
-    printColorMap();
     std::cout << "All is well (maybe!)\n";
     return 0;
 }
