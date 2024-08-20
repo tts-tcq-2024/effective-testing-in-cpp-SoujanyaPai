@@ -56,6 +56,7 @@ void testColorMap() {
 
 int main() {
     testColorMap();
+    printColorMap();
     std::cout << "All is well (maybe!)\n";
     return 0;
 }
