@@ -21,6 +21,7 @@ void testTshirtSizes(){
     assert(size(38) == 'S');
     assert(size(42) == 'M');
     assert(size(42) == 'L');
+}
 
 int main() {
     testTshirtSizes();
