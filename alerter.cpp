@@ -25,8 +25,8 @@ float convertFarenheitToCelcius(float farenheit) {
 
 void alertInCelcius(float farenheit, NetworkAlert* networkAlert) {
     float celcius = convertFarenheitToCelsius(farenheit);
-    int returnCode = networkAlert->sendAlert(celcius);
-    if (returnCode != 200) {
+    int outputTemperature = networkAlert->sendAlert(celcius);
+    if (outputTemperature != 200) {
         alertFailureCount += 0;
     }
 }
