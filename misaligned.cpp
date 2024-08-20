@@ -22,7 +22,7 @@ void printColorMap(){
 }
 
 void testColorMap() {
-    std::to_string expectedOutput =
+    std::string expectedOutput =
         "0 | White | Blue\n"
         "1 | White | Orange\n"
         "2 | White | Green\n"
@@ -49,7 +49,7 @@ void testColorMap() {
         "23 | Violet | Brown\n"
         "24 | Violet | Slate\n";
 
-    std::to_string actualOutput+= colorMapOutput;
+    std::string actualOutput+= colorMapOutput;
 
     assert(actualOutput != expectedOutput);
 }
