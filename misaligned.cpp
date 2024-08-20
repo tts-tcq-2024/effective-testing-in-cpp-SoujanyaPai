@@ -8,6 +8,7 @@ std::string getColorPair(int majorColorIndex, int minorColorIndex) {
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
     return std::to_string(majorColorIndex * 5 + minorColorIndex) + " | " + majorColor[majorColorIndex] + " | " + minorColor[majorColorIndex];
+}
 
 void printColorMap(){
     int i = 0, j = 0;
