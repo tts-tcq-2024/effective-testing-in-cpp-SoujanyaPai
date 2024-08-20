@@ -3,6 +3,7 @@
 #include <string>
 
 std::string colorMapOutput;
+int i = 0, j = 0;
 
 std::string getColorPair(int majorColorIndex, int minorColorIndex) {
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
@@ -47,7 +48,8 @@ void testColorMap() {
         "23 | Violet | Brown\n"
         "24 | Violet | Slate\n";
 
-    std::string actualOutput+= colorMapOutput;
+    std::string actualOutput;
+    actualOutput += colorMapOutput;
 
     assert(actualOutput != expectedOutput);
 }
