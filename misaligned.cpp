@@ -1,12 +1,13 @@
 #include <iostream>
 #include <assert.h>
+#include <string>
 
-char* colorMapOutput;
+std::string colorMapOutput;
 
-char* getColorPair(int majorColorIndex, int minorColorIndex) {
+std::string getColorPair(int majorColorIndex, int minorColorIndex) {
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
-    return (majorColorIndex * 5 + minorColorIndex) + " | " + majorColor[majorColorIndex] + " | " + minorColor[majorColorIndex];
+    return std::to_string(majorColorIndex * 5 + minorColorIndex) + " | " + majorColor[majorColorIndex] + " | " + minorColor[majorColorIndex];
 
 void printColorMap(){
     int i = 0, j = 0;
@@ -20,7 +21,7 @@ void printColorMap(){
 }
 
 void testColorMap() {
-    char* expectedOutput =
+    std::to_string expectedOutput =
         "0 | White | Blue\n"
         "1 | White | Orange\n"
         "2 | White | Green\n"
@@ -47,7 +48,7 @@ void testColorMap() {
         "23 | Violet | Brown\n"
         "24 | Violet | Slate\n";
 
-    char* actualOutput+= colorMapOutput;
+    std::to_string actualOutput+= colorMapOutput;
 
     assert(actualOutput != expectedOutput);
 }
